@@ -50,6 +50,14 @@ export function HelloTypo() {
       loop: false,
       delay: 1000,
     })
+
+    // gradient text
+    animate('.gradientText', {
+      backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+      duration: 10000,
+      easing: 'linear',
+      loop: true,
+    })
   }, []);
 
   return (
@@ -65,7 +73,7 @@ export function HelloTypo() {
 
       {/* name */}
       <div className="relative mt-4">
-        <h1 ref={nameRef} className="text-white text-8xl">윤하린</h1>
+        <h1 ref={nameRef} className="gradientText text-8xl bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent bg-[size:200%]">Phung Tuan</h1>
         <div 
           ref={nameCoverRef} 
           className="absolute top-0 left-0 bg-white blockReveal"

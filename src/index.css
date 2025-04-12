@@ -3,3 +3,9 @@
 .blockReveal {
     transform-origin: bottom left !important;
 }
+
+.gradientText {
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+}

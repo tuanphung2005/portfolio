@@ -22,6 +22,7 @@ function App() {
   }, []);
   
 
+  // TODO: USE TIMELINE INSTEAD OF THIS SHIT
   useEffect(() => {
     if (isIntroComplete) {
 
