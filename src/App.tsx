@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
-import { animate, createTimeline } from "animejs";
+import { animate } from "animejs";
 import { HelloTypo } from "./components/HelloTypo";
 import { VerticalSeparator } from "./components/VerticalSeparator";
 import { NavigationButtons } from "./components/NavigationButtons";
