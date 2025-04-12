@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { animate } from "animejs";
 import { HelloTypo } from "./components/HelloTypo";
 import { VerticalSeparator } from "./components/VerticalSeparator";
