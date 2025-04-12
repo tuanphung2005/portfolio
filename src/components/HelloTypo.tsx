@@ -54,7 +54,7 @@ export function HelloTypo() {
     // gradient text
     animate('.gradientText', {
       backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
-      duration: 10000,
+      duration: 2000,
       easing: 'linear',
       loop: true,
     })
