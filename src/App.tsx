@@ -1,12 +1,12 @@
 import { useState, useEffect, useCallback } from "react";
-import { animate } from "animejs";
+import { animate, createTimeline } from "animejs";
 import { HelloTypo } from "./components/HelloTypo";
 import { VerticalSeparator } from "./components/VerticalSeparator";
 import { NavigationButtons } from "./components/NavigationButtons";
 
 function App() {
   const [isIntroComplete, setIsIntroComplete] = useState(false);
-  
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsIntroComplete(true);
@@ -23,6 +23,7 @@ function App() {
   
 
   // TODO: USE TIMELINE INSTEAD OF THIS SHIT
+  
   useEffect(() => {
     if (isIntroComplete) {
 
@@ -62,6 +63,7 @@ function App() {
       
       return () => clearTimeout(animTimer);
     }
+
   }, [isIntroComplete]);
 
   return (
